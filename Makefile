@@ -2,9 +2,8 @@ PORTNAME=	opencanary
 PORTVERSION=	0.7.1
 CATEGORIES=	security
 LICENSE=	BSD3CLAUSE
-#DISTFILES=	opencanary-0.7.1.tar.gz	
 
-MAINTAINER=	tpchikumbu@gmail.com
+MAINTAINER=	info@thinkst.com
 COMMENT=	Creates a honeypot to detect network breaches
 
 USES=           python:3.8+	shebangfix	fakeroot	gettext
@@ -16,13 +15,11 @@ USE_PYTHON=     distutils noflavors autoplist
 USE_GITHUB=	yes
 GH_ACCOUNT=	tpchikumbu
 GH_PROJECT=	opencanaryBSD
-GH_TAGNAME=	3565f37
+GH_TAGNAME=	3565f37 #Specifies which release or commit the distfiles are coming from
 
 EXTRACT_DEPENDS=git>0:devel/git \
 		${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools \
-                ${PYTHON_PKGNAMEPREFIX}setuptools-git>0:devel/py-setuptools-git \
-		${PYTHON_PKGNAMEPREFIX}setuptools-pkg>0:devel/py-setuptools-pkg \
-		${PYTHON_PKGNAMEPREFIX}setuptools_scm_git_archive>0:devel/py-setuptools_scm_git_archive
+		${PYTHON_PKGNAMEPREFIX}setuptools-pkg>0:devel/py-setuptools-pkg
 
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>0:devel/py-pip \
