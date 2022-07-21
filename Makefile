@@ -17,8 +17,7 @@ GH_ACCOUNT=	tpchikumbu
 GH_PROJECT=	opencanaryBSD
 GH_TAGNAME=	15988c7 #Specifies which release or commit the distfiles are coming from
 
-EXTRACT_DEPENDS=git>0:devel/git \
-		${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools \
+EXTRACT_DEPENDS=${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools \
 		${PYTHON_PKGNAMEPREFIX}setuptools-pkg>0:devel/py-setuptools-pkg
 
 
