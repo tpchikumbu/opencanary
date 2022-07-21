@@ -14,7 +14,7 @@ USE_PYTHON=     distutils noflavors autoplist
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	tpchikumbu
-GH_PROJECT=	opencanaryBSD
+GH_PROJECT=	opencanary
 GH_TAGNAME=	e720b51 #Specifies which release or commit the distfiles are coming from
 
 EXTRACT_DEPENDS=${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools \
