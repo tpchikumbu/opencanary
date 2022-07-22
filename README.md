@@ -15,6 +15,7 @@ The `build` and `package` targets can then be used to create an installable pack
 OpenCanary uses some python modules which do not currently have FreeBSD ports. These can however be downloaded using the pip installer. They are:
 - hpfeeds
 - ntlmlib
+
 The command to install them is :
 `pip install hpfeeds ntlmlib`
 
